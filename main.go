@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	exercises1823 "github.com/lntvan166/leetcode/1823"
+	exercises1823 "github.com/lntvan166/leetcode/problems/1823"
 )
 
 func main() {
