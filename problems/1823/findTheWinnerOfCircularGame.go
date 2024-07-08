@@ -12,10 +12,12 @@ func findTheWinner(n int, k int) int {
 		return 1
 	}
 	isLose := map[int]bool{}
+	player := map[int]bool{}
 	count := 0
 	var result int
 	for i := 1; i <= n; i++ {
 		isLose[i] = false
+		player[i] = true
 	}
 
 	i := 1
@@ -32,11 +34,10 @@ func findTheWinner(n int, k int) int {
 		if count == k {
 			count = 0
 			isLose[i] = true
+			delete(player, i)
 		}
 
-		winner, isEnd := checkOneStanding(isLose)
-		if isEnd {
-			result = winner
+		if len(player) == 1 {
 			break
 		}
 
@@ -46,26 +47,9 @@ func findTheWinner(n int, k int) int {
 		}
 	}
 
+	for k := range player {
+		result = k
+	}
+
 	return result
-}
-
-func checkOneStanding(isLose map[int]bool) (int, bool) {
-	standingCount := 0
-	winner := 0
-	for i := 1; i <= len(isLose); i++ {
-		if isLose[i] {
-			continue
-		}
-
-		winner = i
-		standingCount++
-		if standingCount > 1 {
-			return 0, false
-		}
-	}
-
-	if standingCount == 1 {
-		return winner, true
-	}
-	return 0, false
 }

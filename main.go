@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(exercises1823.FindTheWinner(5, 2))
+	fmt.Println(exercises1823.FindTheWinner(3, 1))
 }
