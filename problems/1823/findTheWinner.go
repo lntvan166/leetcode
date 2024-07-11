@@ -1,6 +1,4 @@
-/*
-https://leetcode.com/problems/find-the-winner-of-the-circular-game/?envType=daily-question&envId=2024-07-08
-*/
+// https://leetcode.com/problems/find-the-winner-of-the-circular-game/?envType=daily-question&envId=2024-07-08
 package exercises1823
 
 func FindTheWinner(n int, k int) int {

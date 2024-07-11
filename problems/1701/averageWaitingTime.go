@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/average-waiting-time/
 package exercises1701
 
 func AverageWaitingTime(customers [][]int) float64 {
