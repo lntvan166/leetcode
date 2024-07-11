@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	exercises1701 "github.com/lntvan166/leetcode/problems/1701"
+	exercises1190 "github.com/lntvan166/leetcode/problems/1190"
 )
 
 func main() {
-	fmt.Println(exercises1701.AverageWaitingTime([][]int{{1, 2}, {2, 5}, {4, 3}}))
+	fmt.Println(exercises1190.ReverseParentheses("(ed(et(oc))el)"))
 }
