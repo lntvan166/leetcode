@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	exercises1190 "github.com/lntvan166/leetcode/problems/1190"
+	exercises4 "github.com/lntvan166/leetcode/problems/4"
 )
 
 func main() {
-	fmt.Println(exercises1190.ReverseParentheses("(ed(et(oc))el)"))
+	fmt.Println(exercises4.FindMedianSortedArrays2([]int{1, 3}, []int{2}))
 }
