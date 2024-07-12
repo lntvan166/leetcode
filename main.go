@@ -2,10 +2,8 @@ package main
 
 import (
 	"fmt"
-
-	exercises4 "github.com/lntvan166/leetcode/problems/4"
 )
 
 func main() {
-	fmt.Println(exercises4.FindMedianSortedArrays2([]int{1, 3}, []int{2}))
+	fmt.Println("Nothing to run here. Please run specific solution file by run test file in each solution folder.")
 }
